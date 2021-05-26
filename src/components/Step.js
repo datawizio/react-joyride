@@ -106,8 +106,7 @@ export default class JoyrideStep extends React.Component {
     const { changed, changedFrom } = treeChanges(prevProps, this.props);
     const state = { action, controlled, index, lifecycle, size, status };
 
-    const skipBeacon =
-      continuous && action !== ACTIONS.CLOSE && (index > 0 || action === ACTIONS.PREV);
+    const skipBeacon = continuous && action !== ACTIONS.CLOSE && action === ACTIONS.PREV;
     const hasStoreChanged =
       changed('action') || changed('index') || changed('lifecycle') || changed('status');
     const hasStarted = changedFrom(

@@ -6,6 +6,8 @@
 
 #### Create awesome tours for your app!
 
+React-joyride fork! Added the ability to show a beacon after each step
+
 Showcase your app to new users or explain functionality of new features.
 
 It uses [react-floater](https://github.com/gilbarbara/react-floater) for positioning and styling.  
