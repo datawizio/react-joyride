@@ -57,6 +57,11 @@ export interface CallBackProps {
   type: string;
 }
 
+export interface ExtendexStepStyles extends React.CSSProperties {
+  additionalOverlayWidth?: number;
+  reduceSize?: number;
+}
+
 export interface Styles {
   beacon?: React.CSSProperties;
   beaconInner?: React.CSSProperties;
@@ -79,7 +84,7 @@ export interface Styles {
   overlay?: React.CSSProperties;
   overlayLegacy?: React.CSSProperties;
   overlayLegacyCenter?: React.CSSProperties;
-  spotlight?: React.CSSProperties;
+  spotlight?: ExtendexStepStyles;
   spotlightLegacy?: React.CSSProperties;
   tooltip?: React.CSSProperties;
   tooltipContainer?: React.CSSProperties;
