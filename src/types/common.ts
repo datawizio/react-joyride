@@ -71,6 +71,11 @@ export type Placement =
   | 'right-start'
   | 'right-end';
 
+export interface ExtendedStepStyles extends CSSProperties {
+  additionalOverlayWidth?: number;
+  reduceSize?: number;
+}
+
 export interface Styles {
   beacon: CSSProperties;
   beaconInner: CSSProperties;
@@ -83,7 +88,7 @@ export interface Styles {
   overlay: CSSProperties;
   overlayLegacy: CSSProperties;
   overlayLegacyCenter: CSSProperties;
-  spotlight: CSSProperties;
+  spotlight: ExtendedStepStyles;
   spotlightLegacy: CSSProperties;
   tooltip: CSSProperties;
   tooltipContainer: CSSProperties;
