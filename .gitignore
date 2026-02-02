@@ -1,8 +1,11 @@
 .tmp
 _book/
 coverage
-es
-lib
+dist
 node_modules
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
 /.history
 .npmrc
