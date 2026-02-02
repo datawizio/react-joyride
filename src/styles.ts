@@ -181,7 +181,7 @@ export default function getStyles(props: Props, step: StepMerged) {
         color: mergedFloaterProps?.styles?.arrow?.color ?? options.arrowColor,
       },
       options: {
-        zIndex: options.zIndex + 100,
+        zIndex: options.zIndex,
       },
     },
     options,

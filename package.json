@@ -1,6 +1,6 @@
 {
   "name": "@datawizio/react-joyride",
-  "version": "2.9.3",
+  "version": "2.9.3-1",
   "description": "Create guided tours for your apps",
   "author": "Gil Barbara <gilbarbara@gmail.com>",
   "repository": {
@@ -94,7 +94,7 @@
   "scripts": {
     "build": " npm run clean && tsup && ts-node scripts/fix-cjs.ts",
     "watch": "tsup --watch",
-    "clean": "del dist/*",
+    "clean": "rm -rf dist/*",
     "lint": "eslint --fix src test",
     "typecheck": "tsc -p test/tsconfig.json",
     "typevalidation": "attw -P",
