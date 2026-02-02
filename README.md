@@ -95,9 +95,9 @@ npm start
 
 ## Create a new version
 ```bash
-git tag -a 2.9.3-1 -m 2.9.3-1
+git tag -a 2.9.4 -m 2.9.4
 git push --tags
-git checkout tags/2.9.3-1
+git checkout tags/2.9.4
 npm login --scope=@datawizio --registry=https://npm.pkg.github.com
 npm publish
 ```
